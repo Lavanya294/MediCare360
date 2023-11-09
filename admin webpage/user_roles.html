@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manage User Roles</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<style>
+  body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  }
+
+  header {
+    background-color: #00A9FF;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+
+  .logo {
+    text-align: center;
+  }
+
+  .logo img {
+    width: 100px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 28px;
+  }
+
+  main {
+    padding: 20px;
+    box-sizing: border-box;
+  }
+
+  h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .user-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  .user-table th,
+  .user-table td {
+    padding: 8px;
+    border: 1px solid #ccc;
+    text-align: left;
+  }
+
+  .user-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+
+  .user-table .actions {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .btn-edit,
+  .btn-delete {
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+  }
+
+  .btn-edit {
+    background-color: #00A9FF;
+    color: white;
+  }
+
+  .btn-delete {
+    background-color: #dc3545;
+    color: white;
+  }
+
+  .add-user {
+    text-align: right;
+  }
+
+  .btn-add {
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    background-color: #00A9FF;
+    color: white;
+  }
+</style>
+
+<body>
+  <header>
+    <div class="logo">
+      <img src="C:\Users\lavan\Desktop\Pse\logo.jpg" alt="Logo">
+    </div>
+  </header>
+
+  <main>
+    <h1>Manage User Roles</h1>
+
+    <table class="user-table">
+      <thead>
+        <tr>
+          <th>Username</th>
+          <th>Email</th>
+          <th>Role</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Saksham Singh</td>
+          <td>saksham.singh@gmail.com</td>
+          <td>Admin</td>
+          <td>
+            <button class="btn-edit">Edit</button>
+            <button class="btn-delete">Delete</button>
+          </td>
+        </tr>
+        <tr>
+          <td>Sree Diskha</td>
+          <td>sree.diksha@gmail.com</td>
+          <td>Doctor</td>
+          <td>
+            <button class="btn-edit">Edit</button>
+            <button class="btn-delete">Delete</button>
+          </td>
+        </tr>
+        <tr>
+          <td>Nitin Pandey</td>
+          <td>nitin.pandey@gmail.com</td>
+          <td>Wardboy</td>
+          <td>
+            <button class="btn-edit">Edit</button>
+            <button class="btn-delete">Delete</button>
+          </td>
+        </tr>
+        <tr>
+          <td>Isha Tripathi</td>
+          <td>isha.tripathi@gmail.com</td>
+          <td>Nurse</td>
+          <td>
+            <button class="btn-edit">Edit</button>
+            <button class="btn-delete">Delete</button>
+          </td>
+        </tr>
+        <tr>
+          <td>Anurag Dixit</td>
+          <td>anurag.dixit@gmail.com</td>
+          <td>Pharmacist</td>
+          <td>
+            <button class="btn-edit">Edit</button>
+            <button class="btn-delete">Delete</button>
+          </td>
+        </tr>
+        <tr>
+          <td>Kanak Aggrawal</td>
+          <td>kanak.aggrawal@gmail.com</td>
+          <td>Nurse</td>
+          <td>
+            <button class="btn-edit">Edit</button>
+            <button class="btn-delete">Delete</button>
+          </td>
+        </tr>
+        <tr>
+          <td>Daksh Mann</td>
+          <td>daksh.mann@gmail.com</td>
+          <td>Doctor</td>
+          <td>
+            <button class="btn-edit">Edit</button>
+            <button class="btn-delete">Delete</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <br>
+    <br>
+    <br>
+    <div class="add-user">
+      <button class="btn-add">Add User</button>
+    </div>
+  </main>
+</body>
+</html>

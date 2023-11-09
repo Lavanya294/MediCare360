@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assign Doctor to Patient</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<style>
+  body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  }
+
+  header {
+    background-color: #00A9FF;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+
+  .logo {
+    text-align: center;
+  }
+
+  .logo img {
+    width: 100px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 28px;
+  }
+
+  main {
+    padding: 20px;
+    box-sizing: border-box;
+  }
+
+  h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  input, select {
+    padding: 5px;
+    border: 1px solid #ccc;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  input[type="submit"] {
+    background-color: #00A9FF;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+  }
+</style>
+<body>
+  <header>
+    <div class="logo">
+      <img src="C:\Users\lavan\Desktop\Pse\logo.jpg" alt="Logo">
+    </div>
+  </header>
+
+  <main>
+    <h1>Assign Doctor to Patient</h1>
+
+    <form action="#">
+      <label for="patientName">Patient Name:</label>
+      <input type="text" id="patientName" name="patientName" required>
+      <br>
+      <br>
+      <br>
+      <label for="doctorName">Select Doctor:</label>
+      <select id="doctorName" name="doctorName" required>
+        <option value="dr_smith">Dr. Shekhar</option>
+        <option value="dr_jones">Dr. Mayank</option>
+        <option value="dr_jones">Dr. Charan</option>
+        <option value="dr_jones">Dr. Nikhil</option>
+        <option value="dr_jones">Dr. Ranjan</option>
+        <option value="dr_jones">Dr. Umesh</option>
+        <option value="dr_jones">Dr. Sakshi</option>
+        <option value="dr_jones">Dr. Tammanah</option>
+        <option value="dr_jones">Dr. Akshata</option>
+        <option value="dr_jones">Dr. Vanshika</option>
+        <option value="dr_jones">Dr. Yatika</option>
+        <option value="dr_jones">Dr. Bhumika</option>
+      </select>
+      <br>
+      <br>
+      <br>
+      <input type="submit" value="Assign Doctor">
+    </form>
+  </main>
+</body>
+</html>

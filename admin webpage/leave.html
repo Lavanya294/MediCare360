@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Leave Records</title>
+    <style>
+        body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        }
+
+        header {
+            background-color: #00A9FF;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .logo img {
+            width: 100px; 
+            height: 100px; 
+            border-radius: 28px;
+        }
+
+        h1 {
+            font-size: 24px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px;
+        }
+
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+
+        th, td {
+            padding: 8px;
+            text-align: center;
+        }
+
+        thead {
+            background-color: #3498db;
+            color: #fff;
+        }
+
+        tbody tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        tbody tr:hover {
+            background-color: #ddd;
+        }
+
+        .options {
+            display: flex;
+            justify-content: space-around;
+            border: 6px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="C:\Users\lavan\Desktop\Pse\logo.jpg" alt="Doctor's Logo">
+        </div>
+        <h1>Leave Records</h1>
+    </header>
+    <main>
+        <table>
+            <thead>
+                <tr>
+                    <th>Employee Id</th>
+                    <th>Name</th>
+                    <th>Roles</th>
+                    <th>Reason</th>
+                    <th>Start Date</th>
+                    <th>End Date</th>
+                    <th>No. of Days</th>
+                    <th>Options</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>12345</td>
+                    <td>Sakshi</td>
+                    <td>Dcotor</td>
+                    <td>Annual Leave</td>
+                    <td>10/11/2023</td>
+                    <td>25/11/2023</td>
+                    <td>15</td>
+                    <td class="options">
+                        <button>Reject</button>
+                        <button>Accept</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>75643</td>
+                    <td>Rashmi</td>
+                    <td>Nurse</td>
+                    <td>Sick Leave</td>
+                    <td>10/08/2023</td>
+                    <td>12/08/2023</td>
+                    <td>2</td>
+                    <td class="options">
+                        <button>Reject</button>
+                        <button>Accept</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>65432</td>
+                    <td>Anurag</td>
+                    <td>Pharmacist</td>
+                    <td>Unpaid leave</td>
+                    <td>30/01/2023</td>
+                    <td>01/01/2023</td>
+                    <td>2</td>
+                    <td class="options">
+                        <button>Reject</button>
+                        <button>Accept</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>4536</td>
+                    <td>Vanshika</td>
+                    <td>Doctor</td>
+                    <td>Unpaid leave</td>
+                    <td>24/04/2023</td>
+                    <td>25/04/2023</td>
+                    <td>1</td>
+                    <td class="options">
+                        <button>Reject</button>
+                        <button>Accept</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>97461</td>
+                    <td>Diksha</td>
+                    <td>Pharmacist</td>
+                    <td>Annual leave</td>
+                    <td>10/03/2022</td>
+                    <td>30/03/2022</td>
+                    <td>20</td>
+                    <td class="options">
+                        <button>Reject</button>
+                        <button>Accept</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>45739</td>
+                    <td>Firoz</td>
+                    <td>Doctor</td>
+                    <td>Unpaid leave</td>
+                    <td>03/03/2023</td>
+                    <td>06/03/2023</td>
+                    <td>3</td>
+                    <td class="options">
+                        <button>Reject</button>
+                        <button>Accept</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>64882</td>
+                    <td>Anugya</td>
+                    <td>Nurse</td>
+                    <td>Sick leave</td>
+                    <td>17/09/2023</td>
+                    <td>19/09/2023</td>
+                    <td>2</td>
+                    <td class="options">
+                        <button>Reject</button>
+                        <button>Accept</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>29469</td>
+                    <td>Manish</td>
+                    <td>Pharmacist</td>
+                    <td>Unpaid leave</td>
+                    <td>26/02/2023</td>
+                    <td>27/02/2023</td>
+                    <td>2</td>
+                    <td class="options">
+                        <button>Reject</button>
+                        <button>Accept</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>25634</td>
+                    <td>Rahul</td>
+                    <td>Wardboy</td>
+                    <td>Sick Leave</td>
+                    <td>06/07/2023</td>
+                    <td>10/07/2023</td>
+                    <td>4</td>
+                    <td class="options">
+                        <button>Reject</button>
+                        <button>Accept</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Update Prescription</title>
+</head>
+<style>
+  body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  }
+
+  .header {
+    background-color: #00A9FF;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .header img {
+    max-width: 100px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 28px;
+  }
+
+  .prescription-form {
+    max-width: 400px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .label {
+    display: block;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+
+  input[type="text"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+
+  button {
+    background-color: #0077b6;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+
+  button:hover {
+    background-color: #005b8e;
+  }
+
+</style>
+<body>
+  <div class="header">
+    <img src="C:\Users\lavan\Desktop\Pse\logo.jpg" alt="Logo">
+    <h1>Prescription Update</h1>
+  </div>
+  <div class="prescription-form">
+    <label for="patient-name">Patient Name:</label>
+    <input type="text" id="patient-name" name="patient-name" placeholder="Enter patient name">
+
+    <label for="medication">Medication:</label>
+    <textarea id="medication" name="medication" placeholder="Enter medication details"></textarea>
+
+    <label for="dosage">Dosage:</label>
+    <input type="text" id="dosage" name="dosage" placeholder="Enter dosage">
+
+    <button type="submit">Update Prescription</button>
+  </div>
+</body>
+</html>

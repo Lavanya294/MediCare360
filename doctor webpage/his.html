@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Patient History</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #00A9FF;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        header img{
+            width: 100px;
+            border-radius: 28px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+            border: 1px solid #ccc;
+        }
+
+        .patient-info {
+            margin-bottom: 10px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        table, th, td {
+            border: 1px solid #ccc;
+        }
+
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="C:\Users\lavan\Desktop\Pse\logo.jpg" alt="Logo">
+        <h1>Patient History</h1>
+    </header>
+    <div class="container">
+        <h2>Patient Information</h2>
+        <div class="patient-info">
+            <label for="patient-name">Name:</label>
+            <span id="patient-name">Raj trivedi</span>
+        </div>
+        <div class="patient-info">
+            <label for="patient-id">Patient ID:</label>
+            <span id="patient-id">12345</span>
+        </div>
+        <div class="patient-info">
+            <label for="patient-dob">Date of Birth:</label>
+            <span id="patient-dob">January 28, 1980</span>
+        </div>
+
+        <h2>Medical History</h2>
+        <table>
+            <tr>
+                <th>Date</th>
+                <th>Diagnosis</th>
+                <th>Treatment</th>
+            </tr>
+            <tr>
+                <td>2019-05-01</td>
+                <td>Hypertension</td>
+                <td>Prescribed medication</td>
+            </tr>
+            <tr>
+                <td>2020-03-19</td>
+                <td>Cardiac Arrest</td>
+                <td>Admitted, <br> Prescribed medication</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
