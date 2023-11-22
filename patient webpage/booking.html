@@ -1,44 +1,109 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Doctor Appointment Booking</title>
-  <link rel="stylesheet" type="text/css" href="styles.css">
-  <script src="pqr.js"></script>
+  <meta charset="UTF-8">
+  <title>Appointment Booking</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Basic styling for the form and container */
+body {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #3498db; /* Blue background color */
+  }
+  
+  .container {
+    width: 80%;
+    max-width: 600px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    color: #3498db; /* Blue text color */
+    text-align: center;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label,
+  select,
+  input[type="submit"],
+  input[type="date"] {
+    margin-bottom: 10px;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #3498db; /* Blue border color */
+  }
+  
+  input[type="submit"] {
+    background-color: #3498db; /* Blue submit button color */
+    color: #fff; /* White text color */
+    cursor: pointer;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #2980b9; /* Darker blue on hover */
+  }
+  
+  .logo {
+    display: block;
+    margin: 0 auto;
+    max-width: 200px; /* Adjust as needed */
+  }
+  </style>
 </head>
+
 <body>
   <div class="container">
-    <div class="logo-container">
-      <img src="logo.jpg" alt="Logo" class="logo"/> 
-    </div>
+    <img src="logo.jpg" alt="Logo" class="logo">
     <h1>Book an Appointment</h1>
-    <form>
-      <label for="name">Name</label>
-      <input type="text" id="name" name="name" required>
-
-      <label for="email">Email</label>
-      <input type="email" id="email" name="email" required>
-
-      <label for="doctor">Doctor</label>
-      <select id="doctor" name="doctor" required>
-        <option value="dr_smith">Dr. Shekhar</option>
-        <option value="dr_jones">Dr. Mayank</option>
-        <option value="dr_jones">Dr. Charan</option>
-        <option value="dr_jones">Dr. Nikhil</option>
-        <option value="dr_jones">Dr. Ranjan</option>
-        <option value="dr_jones">Dr. Umesh</option>
-        <option value="dr_jones">Dr. Sakshi</option>
-        <option value="dr_jones">Dr. Tammanah</option>
-        <option value="dr_jones">Dr. Akshata</option>
-        <option value="dr_jones">Dr. Vanshika</option>
-        <option value="dr_jones">Dr. Yatika</option>
-        <option value="dr_jones">Dr. Bhumika</option>
+    <form id="appointmentForm">
+      <label for="specialization">Select Doctor Specialization:</label>
+      <select id="specialization" name="specialization">
+        <option value="cardiologist">Cardiologist</option>
+        <option value="dermatologist">Dermatologist</option>
+        <option value="neurologist">Neurologist</option>
+        <option value="Gastroenterologists">Gastroenterologists</option>
+        <option value="Oncologists">Oncologists</option>
+        <option value="Surgeons">Surgeons</option>
+        <option value="Gynecologists">Gynecologists</option>
+        <option value="Anesthesiologists">Anesthesiologists</option>
+        <option value="Radiologists">Radiologists</option>
+        <option value="Endocrinologists">Endocrinologists</option>
+        <option value="Immunologists">Immunologists</option>
       </select>
-
-      <label for="date">Date</label>
-      <input type="date" id="date" name="date" required>
-
-      <input type="submit" onclick="myFunction3()" value="Book Now">
+      <label for="doctor">Select Doctor:</label>
+      <select id="doctor" name="doctor">
+      </select>
+      <label for="bookingDate">Select Date:</label>
+      <input type="date" id="bookingDate" name="bookingDate">
+      </select>
+      <label for="timeSlot">Select Time Slot:</label>
+      <select id="timeSlot" name="timeSlot">
+        <option value="9AM">9:00 AM</option>
+        <option value="10AM">10:00 AM</option>
+        <option value="11AM">11:00 AM</option>
+        <option value="12AM">12:00 PM</option>
+        <option value="3PM">3:00 PM</option>
+        <option value="4PM">4:00 PM</option>
+        <option value="5PM">5:00 PM</option>
+        <option value="6PM">6:00 PM</option>
+      </select>
+      <input type="submit" value="Confirm Appointment">
     </form>
   </div>
+
+  <script src="scripts.js"></script>
 </body>
 </html>
